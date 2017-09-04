@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 // Mensaje de mantenimineto:
 // -------------------------
-// app.use((req, res, next) => {     res.render('maintenance.hbs'); });
+//app.use((req, res, next) => {     res.render('maintenance.hbs'); });
 // -------------------------
 
 app.use('/', express.static(__dirname + '/archivos_publicos'));
