@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const PORT = process.env.PORT || 3000;
+
 // Para que nodemon se reinice cuando se modifica un
 // archivo .hbs, se lo debe ejecutar asi:
 // nodemon server.js -e js,hbs
@@ -67,7 +69,7 @@ app.get('/about', (req, res) =>{
     });
 });
 
-app.listen(3000, ()=> {
-    console.log('Servidor inciado perfectamente.');
+app.listen(PORT, ()=> {
+    console.log(`Servidor inciado en el puerto ${PORT}`);
 });
 
